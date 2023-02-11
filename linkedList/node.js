@@ -96,7 +96,7 @@ class linkedList {
     if (this.isEmpty()) {
       return null;
     }
-    if (this.head.value=== value) {
+    if (this.head.value === value) {
       this.head = this.head.next;
       this.size--;
       return value;
@@ -111,26 +111,25 @@ class linkedList {
         this.size--;
         return value;
       }
-      return null
+      return null;
     }
   }
 
-  search(value){
-    if(this.isEmpty()){
-        return -2
+  search(value) {
+    if (this.isEmpty()) {
+      return -2;
     }
-    let i=0
-    let curr=this.head
-    while(curr){
-        if(curr.value===value){
-            return i
-        }
-        curr=curr.next
-        i++
+    let i = 0;
+    let curr = this.head;
+    while (curr) {
+      if (curr.value === value) {
+        return i;
+      }
+      curr = curr.next;
+      i++;
     }
-    return -4
+    return -4;
   }
-
 }
 
 const list = new linkedList();
@@ -171,6 +170,6 @@ list.insert(11, 2);
 list.print();
 // console.log(list.removeNode(1));
 list.print();
-list.removeValue(15)
-list.print()
-console.log(list.search(11))
+list.removeValue(15);
+list.print();
+console.log(list.search(11));
