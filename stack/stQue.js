@@ -16,8 +16,10 @@ class Stack {
   }
 }
 
+
 const stack = new Stack();
 stack.push(3);
 stack.push(78);
 stack.push(87);
+stack.pop()
 console.log(stack);

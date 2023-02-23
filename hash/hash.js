@@ -53,3 +53,4 @@ hash.set("names", "jishnu");
 hash.set("ages", 20);
 // hash.display()
 console.log(hash);
+
